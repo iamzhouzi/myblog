@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.hbpu.myblog.mapper.PostMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.edu.hbpu.myblog.model.Post">
+        <id column="postid" property="postid" />
+        <result column="content" property="content" />
+        <result column="articleid" property="articleid" />
+        <result column="fromuid" property="fromuid" />
+        <result column="touid" property="touid" />
+        <result column="parentid" property="parentid" />
+        <result column="topostid" property="topostid" />
+        <result column="posttype" property="posttype" />
+        <result column="deleted" property="deleted" />
+        <result column="topstatus" property="topstatus" />
+        <result column="createtime" property="createtime" />
+    </resultMap>
+
+</mapper>
